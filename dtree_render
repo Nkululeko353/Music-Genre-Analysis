@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<#_words &le; 422.5<br/>entropy = 2.255<br/>samples = 2095<br/>value = [271, 492, 286, 606, 440]<br/>class = country>, fillcolor="#f1f1fd"] ;
+1 [label=<#_of_views &le; 84537.5<br/>entropy = 2.176<br/>samples = 1381<br/>value = [239, 85, 266, 381, 410]<br/>class = country>, fillcolor="#fef9fd"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 1.983<br/>samples = 795<br/>value = [207, 14, 230, 78, 266]<br/>class = country>, fillcolor="#fdf2fb"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.835<br/>samples = 586<br/>value = [32, 71, 36, 303, 144]<br/>class = country>, fillcolor="#b9b8f6"] ;
+1 -> 3 ;
+4 [label=<Followers &le; 10565840.5<br/>entropy = 1.525<br/>samples = 714<br/>value = [32, 407, 20, 225, 30]<br/>class = country>, fillcolor="#cef5b5"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<entropy = 1.312<br/>samples = 533<br/>value = [15, 369, 18, 114, 17]<br/>class = country>, fillcolor="#afef86"] ;
+4 -> 5 ;
+6 [label=<entropy = 1.571<br/>samples = 181<br/>value = [17, 38, 2, 111, 13]<br/>class = country>, fillcolor="#9b9af2"] ;
+4 -> 6 ;
+}
